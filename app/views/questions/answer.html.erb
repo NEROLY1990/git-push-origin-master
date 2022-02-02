@@ -1,20 +1,25 @@
 <h1>Stupid Coaching</h1>
 
-<blokquote>
+<blockquote>
   <p>
     <% if @ask.blank? %>
       🤪
     <% else %>
       <%= @ask %>
+    
+    <% end %>
+    
+    
   <cite>You</cite>
   </p>
 </blockquote>
 
 <blockquote class="coach">
   <p>
-    <% @answer %>
+    <%= @answer %>
     <cite>Your coach</cite>
   </p>
 
-
 </blockquote>
+
+<%= link_to "Ask a new question", ask_path %>
