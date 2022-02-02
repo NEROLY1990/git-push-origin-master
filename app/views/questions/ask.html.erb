@@ -1,5 +1,7 @@
-<h1>Questions</h1>
-  <form action="ask">
-    <input type="text" name="Quelle est ta question?">
-    <input type="submit" value="Ask!">
+<h1>Stupid coaching</h1>
+  <p>Ask your coach anything: </p>
+  <form action="/answer">
+    <input type="text" name="ask" value="<%= params[:ask] %>"placeholder="Hello, what are you looking for?">
+    <input type="submit">
   </form>
+

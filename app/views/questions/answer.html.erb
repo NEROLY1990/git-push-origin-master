@@ -1,0 +1,20 @@
+<h1>Stupid Coaching</h1>
+
+<blokquote>
+  <p>
+    <% if @ask.blank? %>
+      🤪
+    <% else %>
+      <%= @ask %>
+  <cite>You</cite>
+  </p>
+</blockquote>
+
+<blockquote class="coach">
+  <p>
+    <% @answer %>
+    <cite>Your coach</cite>
+  </p>
+
+
+</blockquote>
